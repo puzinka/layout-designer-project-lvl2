@@ -11,3 +11,68 @@ body {
     line-height: 1.5;
     color: $dark-gray;
 }
+
+@mixin h ($orientation) {
+    @if ($orientation == landscape) {
+        h1 {
+            font-size: 60px;
+            line-height: 90px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 38px;
+            line-height: 57px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    } @else {
+        h1 {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@mixin form {
+    input {
+        min-width: calc(270px - 20px);
+        min-height: 50px;
+        padding-left: 20px;
+        margin-bottom: 1.5rem;
+        border: $dark-gray solid 2px;
+        border-radius: 3px;
+        background: none;
+        font-size: 14px;
+        outline: none;
+    }
+    
+    input::-webkit-input-placeholder {
+        color: $white;
+    }
+
+    input::-moz-placeholder {
+        color: $white;
+    }
+}
+
+@mixin button-color ($fs, $h, $bg, $br) {
+    font-size: $fs;
+    height: $h;
+    border: none;
+    outline: none;
+    background: $bg;
+    border-radius: $br;
+    color: $white;
+    text-align: center;
+}

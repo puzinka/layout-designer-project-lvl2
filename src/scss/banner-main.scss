@@ -2,11 +2,56 @@
     background-image: url(../images/banner.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    height: 750px;
     margin: 0 auto;
 }
 
 #page-description {
-    overflow-y: auto;
-    overflow-x: hidden;
+    position: absolute;
+    margin: 200px auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 570px;
+    margin: 0 auto;
+
+    @include form;
+
+    button {
+        min-width: 374px;
+        margin: 20px 0;
+        text-transform: uppercase;
+        flex: 1;
+
+        @include button-color (13px, 57px, $green, 5px);
+    }
+}
+
+@media (orientation: landscape) {
+    @include h (landscape);
+
+    #page-description {
+        margin: 200px auto;
+    }
+    
+}
+
+@media (orientation: portrait) {
+    @include h (portrait);
+
+    #page-description {
+        margin: 200px 20px;
+    }
+
+    .form-container input {
+        flex: 1;
+    }
 }

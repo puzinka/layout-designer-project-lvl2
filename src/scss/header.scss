@@ -127,16 +127,16 @@ header {
         $input-width: 248px;
         $input-height: 25px;
 
-        font-size: calc($font-size * 2.37);
+        font-size: $font-size;
         flex-direction: column;
         flex-wrap: nowrap;
         margin-left: auto;
         margin-right: auto;
         right: 0;
         left: 0;
-        margin: 0 calc(20px * 2.37);
-        top: calc($top * 2.37);
-        height: 346px;
+        margin: 0 20px;
+        top: $top;
+        height: 145px;
         justify-content: space-between;
     
 
@@ -154,18 +154,18 @@ header {
 
         input {
             flex: 1;
-            border-radius: calc($border-radius * 2.37);
-            font-size: calc($font-placeholder * 2.37);
-            height: calc($input-height * 2.37);
-            padding: 0 calc($input-paddind * 2.37);
+            border-radius: $border-radius;
+            font-size: $font-placeholder;
+            height: $input-height;
+            padding: 0 $input-paddind;
         }
 
         .logo {
-            width: calc($logo-width * 2.37);
+            width: $logo-width;
         }
 
         .logo img {
-            width: calc($img-width * 2.37);
+            width: $img-width;
         }
     }
 }
