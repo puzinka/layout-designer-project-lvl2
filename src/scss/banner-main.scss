@@ -1,0 +1,12 @@
+.banner-main {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#page-description {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
