@@ -1,7 +1,5 @@
 .banner-main {
-    background-image: url(../images/banner.png);
-    background-position: center;
-    background-size: cover;
+    @include bg (url(../images/banner.png));
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -12,11 +10,6 @@
     text-align: center;
     left: 0;
     right: 0;
-
-    h1,
-    h2 {
-        margin: 0;
-    }
 }
 
 .form-container {
@@ -26,6 +19,10 @@
     flex-wrap: wrap;
     max-width: 570px;
     margin: 0 auto;
+
+    input {
+        @include form; 
+    }
 
     input::-webkit-input-placeholder {
         color: $white;

@@ -20,18 +20,6 @@ body {
   color: #cacaca;
 }
 
-.btn {
-  min-width: 250px;
-  min-height: 45px;
-  padding-left: 20px;
-  margin-bottom: 1.5rem;
-  border: #cacaca solid 2px;
-  border-radius: 3px;
-  background: none;
-  font-size: 14px;
-  outline: none;
-}
-
 header {
   text-transform: uppercase;
   font-weight: bold;
@@ -194,10 +182,6 @@ header input::-moz-placeholder {
   left: 0;
   right: 0;
 }
-.main-section h1,
-.main-section h2 {
-  margin: 0;
-}
 
 .form-container {
   display: flex;
@@ -206,6 +190,17 @@ header input::-moz-placeholder {
   flex-wrap: wrap;
   max-width: 570px;
   margin: 0 auto;
+}
+.form-container input {
+  min-width: 250px;
+  min-height: 45px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: #cacaca solid 2px;
+  border-radius: 3px;
+  background: none;
+  font-size: 14px;
+  outline: none;
 }
 .form-container input::-webkit-input-placeholder {
   color: #fff;
@@ -237,6 +232,7 @@ header input::-moz-placeholder {
     line-height: 90px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
   }
 
   h2 {
@@ -244,6 +240,15 @@ header input::-moz-placeholder {
     line-height: 57px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   .main-section {
@@ -263,6 +268,7 @@ header input::-moz-placeholder {
     line-height: 45px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
   }
 
   h2 {
@@ -270,6 +276,15 @@ header input::-moz-placeholder {
     line-height: 27px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   .main-section {
@@ -278,6 +293,113 @@ header input::-moz-placeholder {
 
   .form-container input {
     flex: 1;
+  }
+}
+#page-pricing {
+  padding-top: 100px;
+  text-align: center;
+  max-width: 1200px;
+  min-width: 374px;
+  margin: 0 auto;
+}
+#page-pricing h2 {
+  margin-bottom: 49px;
+}
+#page-pricing h3 {
+  margin-bottom: 200px;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pricing-item {
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 50px;
+}
+.pricing-item .pricing-value {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 76px;
+}
+.pricing-item .pricing-value span {
+  font-size: 64px;
+  vertical-align: -webkit-baseline-middle;
+  line-height: 0;
+}
+
+.bg-free {
+  background-image: url(../images/subscribe_1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url(../images/subscribe_2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url(../images/subscribe_3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-footer {
+  font-size: 13px;
+  margin-top: 84px;
+}
+
+@media (orientation: landscape) {
+  .pricing-item {
+    width: 318px;
+    height: 566px;
+    padding: 1.5rem;
+  }
+
+  .page-pricing-p {
+    margin: -11px 20px;
+  }
+
+  .btn {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 24px 112px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+}
+@media (orientation: portrait) {
+  .pricing-item {
+    padding: 15px 1.5rem;
+    width: 324px;
+    height: 564px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-pricing-p {
+    margin: -7px 20px;
+  }
+
+  .btn {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 24px 115px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
   }
 }
 
