@@ -20,6 +20,18 @@ body {
   color: #cacaca;
 }
 
+.btn {
+  min-width: 250px;
+  min-height: 45px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: #cacaca solid 2px;
+  border-radius: 3px;
+  background: none;
+  font-size: 14px;
+  outline: none;
+}
+
 header {
   text-transform: uppercase;
   font-weight: bold;
@@ -194,17 +206,6 @@ header input::-moz-placeholder {
   flex-wrap: wrap;
   max-width: 570px;
   margin: 0 auto;
-}
-.form-container input {
-  min-width: 250px;
-  min-height: 45px;
-  padding-left: 20px;
-  margin-bottom: 1.5rem;
-  border: #cacaca solid 2px;
-  border-radius: 3px;
-  background: none;
-  font-size: 14px;
-  outline: none;
 }
 .form-container input::-webkit-input-placeholder {
   color: #fff;
