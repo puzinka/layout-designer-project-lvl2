@@ -172,7 +172,6 @@ header input::-moz-placeholder {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
   margin: 0 auto;
 }
 
@@ -182,6 +181,10 @@ header input::-moz-placeholder {
   text-align: center;
   left: 0;
   right: 0;
+}
+#page-description h1,
+#page-description h2 {
+  margin: 0;
 }
 
 .form-container {
@@ -194,7 +197,7 @@ header input::-moz-placeholder {
 }
 .form-container input {
   min-width: 250px;
-  min-height: 50px;
+  min-height: 45px;
   padding-left: 20px;
   margin-bottom: 1.5rem;
   border: #cacaca solid 2px;
@@ -211,7 +214,6 @@ header input::-moz-placeholder {
 }
 .form-container button {
   min-width: 374px;
-  margin: 20px 0;
   text-transform: uppercase;
   flex: 1;
   font-size: 13px;
@@ -225,6 +227,10 @@ header input::-moz-placeholder {
 }
 
 @media (orientation: landscape) {
+  .banner-main {
+    height: 750px;
+  }
+
   h1 {
     font-size: 60px;
     line-height: 90px;
@@ -242,8 +248,15 @@ header input::-moz-placeholder {
   #page-description {
     margin: 200px auto;
   }
+  #page-description p {
+    margin: 32px 0 16px 0;
+  }
 }
 @media (orientation: portrait) {
+  .banner-main {
+    height: 853px;
+  }
+
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -259,7 +272,7 @@ header input::-moz-placeholder {
   }
 
   #page-description {
-    margin: 200px 20px;
+    margin: 247px 20px;
   }
 
   .form-container input {

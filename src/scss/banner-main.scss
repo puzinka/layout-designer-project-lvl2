@@ -3,7 +3,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 750px;
     margin: 0 auto;
 }
 
@@ -13,7 +12,14 @@
     text-align: center;
     left: 0;
     right: 0;
+
+    h1,
+    h2 {
+        margin: 0;
+    }
 }
+
+
 
 .form-container {
     display: flex;
@@ -27,7 +33,6 @@
 
     button {
         min-width: 374px;
-        margin: 20px 0;
         text-transform: uppercase;
         flex: 1;
 
@@ -36,19 +41,31 @@
 }
 
 @media (orientation: landscape) {
+    .banner-main {
+        height: 750px;
+    }
+
     @include h (landscape);
 
     #page-description {
         margin: 200px auto;
+
+        p {
+            margin: 32px 0 16px 0;
+        }
     }
     
 }
 
 @media (orientation: portrait) {
+    .banner-main {
+        height: 853px;
+    }
+
     @include h (portrait);
 
     #page-description {
-        margin: 200px 20px;
+        margin: 247px 20px;
     }
 
     .form-container input {
