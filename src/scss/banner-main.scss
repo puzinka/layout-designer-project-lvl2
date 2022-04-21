@@ -19,8 +19,6 @@
     }
 }
 
-
-
 .form-container {
     display: flex;
     flex-direction: row;
@@ -29,7 +27,17 @@
     max-width: 570px;
     margin: 0 auto;
 
-    @include form;
+    input {
+        @include btn; 
+    }
+
+    input::-webkit-input-placeholder {
+        color: $white;
+    }
+
+    input::-moz-placeholder {
+        color: $white;
+    }
 
     button {
         min-width: 374px;
