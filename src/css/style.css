@@ -175,15 +175,15 @@ header input::-moz-placeholder {
   margin: 0 auto;
 }
 
-#page-description {
+.main-section {
   position: absolute;
   margin: 200px auto;
   text-align: center;
   left: 0;
   right: 0;
 }
-#page-description h1,
-#page-description h2 {
+.main-section h1,
+.main-section h2 {
   margin: 0;
 }
 
@@ -245,10 +245,10 @@ header input::-moz-placeholder {
     text-transform: uppercase;
   }
 
-  #page-description {
+  .main-section {
     margin: 200px auto;
   }
-  #page-description p {
+  .main-section p {
     margin: 32px 0 16px 0;
   }
 }
@@ -271,7 +271,7 @@ header input::-moz-placeholder {
     text-transform: uppercase;
   }
 
-  #page-description {
+  .main-section {
     margin: 247px 20px;
   }
 

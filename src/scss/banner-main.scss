@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-#page-description {
+.main-section {
     position: absolute;
     margin: 200px auto;
     text-align: center;
@@ -47,7 +47,7 @@
 
     @include h (landscape);
 
-    #page-description {
+    .main-section {
         margin: 200px auto;
 
         p {
@@ -64,7 +64,7 @@
 
     @include h (portrait);
 
-    #page-description {
+    .main-section {
         margin: 247px 20px;
     }
 
