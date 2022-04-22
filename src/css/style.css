@@ -525,5 +525,13 @@ header input::-moz-placeholder {
     margin-bottom: 61px;
   }
 }
+#page-app {
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 100px 20px 0 20px;
+}
+#page-app h2 {
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
