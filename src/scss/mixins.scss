@@ -51,18 +51,6 @@
     }
 }
 
-@mixin form {
-    min-width: calc(270px - 20px);
-    min-height: 45px;
-    padding-left: 20px;
-    margin-bottom: 1.5rem;
-    border: $dark-gray solid 2px;
-    border-radius: 3px;
-    background: none;
-    font-size: 14px;
-    outline: none;
-}
-
 @mixin button-color ($fs, $h, $bg, $br) {
     font-size: $fs;
     height: $h;
@@ -80,13 +68,9 @@
     background-size: cover;
 }
 
-@mixin btn ($clr, $br, $bg, $w, $h) {
-    border: 1px solid $bg;
-    border-radius: $br;
-    padding: $h $w;
-    color: $clr;
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
+@mixin btn {
+    border: $dark-gray solid 2px;
+    border-radius: 5px;
+    background: none;
+    outline: none;
 }

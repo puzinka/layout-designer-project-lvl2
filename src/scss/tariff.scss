@@ -76,10 +76,14 @@
         width: 1200px;
     }
 
-    .btn {
-        @include btn ($white, 5px, $white, 112px, 24px);
+    .link {
+        padding: 24px 112px;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
     }
-    
 }
 
 @media (orientation: portrait) {
@@ -102,7 +106,12 @@
         margin: -7px 20px;
     }
 
-    .btn {
-        @include btn ($white, 5px, $white, 115px, 24px);
+    .link {
+        padding: 24px 115px;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
     }
 }

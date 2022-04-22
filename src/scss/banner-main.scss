@@ -20,10 +20,6 @@
     max-width: 570px;
     margin: 0 auto;
 
-    input {
-        @include form; 
-    }
-
     input::-webkit-input-placeholder {
         color: $white;
     }
@@ -39,6 +35,17 @@
 
         @include button-color (13px, 57px, $green, 5px);
     }
+}
+
+.btn {
+    @include btn;
+}
+
+.inpt {
+    min-width: calc(270px - 20px);
+    min-height: 45px;
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
 }
 
 @media (orientation: landscape) {
