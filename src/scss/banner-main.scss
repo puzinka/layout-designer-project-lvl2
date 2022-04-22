@@ -28,12 +28,13 @@
         color: $white;
     }
 
-    button {
+    .btn-banner {
         min-width: 374px;
         text-transform: uppercase;
         flex: 1;
+        height: 57px;
 
-        @include button-color (13px, 57px, $green, 5px);
+        @include button-color (13px, $green, 5px);
     }
 }
 

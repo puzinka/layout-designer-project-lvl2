@@ -55,9 +55,8 @@
     }
 }
 
-@mixin button-color ($fs, $h, $bg, $br) {
+@mixin button-color ($fs, $bg, $br) {
     font-size: $fs;
-    height: $h;
     border: none;
     outline: none;
     background: $bg;

@@ -197,12 +197,12 @@ header input::-moz-placeholder {
 .form-container input::-moz-placeholder {
   color: #fff;
 }
-.form-container button {
+.form-container .btn-banner {
   min-width: 374px;
   text-transform: uppercase;
   flex: 1;
-  font-size: 13px;
   height: 57px;
+  font-size: 13px;
   border: none;
   outline: none;
   background: #34c176;
@@ -532,6 +532,51 @@ header input::-moz-placeholder {
 }
 #page-app h2 {
   text-align: center;
+  margin-bottom: 48px;
+}
+#page-app .mobile-app-p {
+  margin-bottom: 16px;
+}
+#page-app .btn-download {
+  font-size: 12.8px;
+  border: none;
+  outline: none;
+  background: #95390c;
+  border-radius: 32px;
+  color: #fff;
+  text-align: center;
+  padding: 19px 41px;
+  text-decoration: none;
+}
+#page-app .margin-mobil-app {
+  margin-bottom: 30px;
+}
+
+@media (orientation: landscape) {
+  #page-app .mobile-app-img {
+    margin-right: 125px;
+  }
+  #page-app .mobile-app-p {
+    width: 580px;
+    height: 48px;
+  }
+}
+@media (orientation: portrait) {
+  #page-app .mobile-app-img {
+    margin: 0 auto;
+  }
+  #page-app .mobile-app-p {
+    width: 375px;
+  }
+  #page-app .height-1 {
+    height: 96px;
+  }
+  #page-app .height-2 {
+    height: 72px;
+  }
+  #page-app .column-mobile-app {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
