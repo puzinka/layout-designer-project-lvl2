@@ -578,5 +578,25 @@ header input::-moz-placeholder {
     margin: 0 auto;
   }
 }
+footer {
+  width: 100%;
+}
+footer .bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+footer .bg-green {
+  background: #e0e0e0;
+}
+footer .first-block {
+  height: calc(272px - 6rem);
+  padding: 3rem 20px;
+}
+footer .line-green {
+  height: 2px;
+}
+footer .last-block {
+  height: calc(113px - 4rem);
+  padding: 2rem 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
