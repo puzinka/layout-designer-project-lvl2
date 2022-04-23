@@ -34,11 +34,7 @@ footer {
 
     .first-flex {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-        flex-wrap: wrap;
 
         h2 {
             font-size: 18px;
@@ -80,6 +76,11 @@ footer {
 @media (orientation: landscape) {
    footer {
        .first-flex {
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
            .column-flex {
                 margin-bottom: 10px;
            }
@@ -101,6 +102,8 @@ footer {
     footer {
         .first-flex {
             margin-bottom: 14px;
+            flex-direction: column;
+            width: 375px;
 
             .column-flex {
                  margin-bottom: 31px;

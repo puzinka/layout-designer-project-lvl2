@@ -612,11 +612,7 @@ footer .last-block {
 }
 footer .first-flex {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
 }
 footer .first-flex h2 {
   font-size: 18px;
@@ -650,6 +646,12 @@ footer .last-flex div {
 }
 
 @media (orientation: landscape) {
+  footer .first-flex {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
   footer .first-flex .column-flex {
     margin-bottom: 10px;
   }
@@ -664,6 +666,8 @@ footer .last-flex div {
 @media (orientation: portrait) {
   footer .first-flex {
     margin-bottom: 14px;
+    flex-direction: column;
+    width: 375px;
   }
   footer .first-flex .column-flex {
     margin-bottom: 31px;
