@@ -1,0 +1,110 @@
+#page-description {
+    .banner-main {
+        @include bg (url(../images/Morten-Harket.png));
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    .main-section {
+        position: absolute;
+        padding: 0 20px;
+        left: 0;
+        right: 0;
+        max-width: 1200px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p {
+            margin-bottom: 49px;
+        }
+    }
+
+    .btn-banner {
+        font-size: 13px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .btn-red::before {
+        position: absolute;
+        content: '';
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/heart.svg);
+        width: 20px;
+        height: 20px;
+        filter: invert(1);
+        left: 32px;
+    }
+
+    .btn-purple::before {
+        position: absolute;
+        content: '';
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/play-button.svg);
+        width: 20px;
+        height: 20px;
+        filter: invert(1);
+        left: 32px;
+    }
+
+
+    .btn-red {
+        background: $red;
+        position: relative;
+        padding: 20px 54px;
+    }
+
+    .btn-purple {
+        background: $purple;
+        position: relative;
+        padding: 20px 81px;
+    }
+
+
+}
+
+@media (orientation: landscape) {
+    @include h (landscape);
+
+    .banner-main {
+        height: 713px;
+    }
+
+    .main-section {
+        margin: 250px auto 200px auto;
+
+        div {
+            flex-direction: row;
+            width: 425px;
+        }
+    }
+
+}
+
+@media (orientation: portrait) {
+    @include h (portrait);
+
+    .banner-main {
+        height: 730px;
+    }
+
+    .main-section {
+        margin: 225px auto 200px auto;
+
+        div {
+            flex-direction: column;
+            width: 201px;
+            height: 147px;
+        }
+    }
+}
