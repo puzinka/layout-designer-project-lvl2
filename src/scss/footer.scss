@@ -9,9 +9,19 @@ footer {
         background: $gray;
     }
 
+    .footer-link {
+        font-size: 16px;
+        line-height: 24px;
+        color: $gray;
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        color: $white;
+    }
+
     .first-block {
-        height: calc(272px - 6rem);
-        padding: 3rem 20px;
+        padding: 62px 20px;
     }
 
     .line-green {
@@ -19,7 +29,93 @@ footer {
     }
 
     .last-block {
-        height: calc(113px - 4rem);
-        padding: 2rem 20px;
+        padding: 40px 20px;
+    }
+
+    .first-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        h2 {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: bold;
+            width: 270px;
+            margin-bottom: 15px;
+        }
+
+        .column-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 270px;
+        }
+
+        .flex-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 150px;
+        }
+    }
+
+    .last-flex {
+        max-width: 1200px;
+        margin: 0 auto 9px auto;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 432px;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+   footer {
+       .first-flex {
+           .column-flex {
+                margin-bottom: 10px;
+           }
+       }
+
+       .last-flex {
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                width: 432px;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    footer {
+        .first-flex {
+            margin-bottom: 14px;
+
+            .column-flex {
+                 margin-bottom: 31px;
+            }
+        }
+
+        .last-flex {
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                width: 360px;
+                height: 184px;
+            }
+        }
     }
 }

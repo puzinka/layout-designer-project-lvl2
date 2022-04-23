@@ -465,6 +465,11 @@ header input::-moz-placeholder {
   font-size: 12px;
 }
 
+.btn-new:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 .news-author {
   font-size: 12px;
   text-transform: uppercase;
@@ -587,16 +592,90 @@ footer .bg-gradient {
 footer .bg-green {
   background: #e0e0e0;
 }
+footer .footer-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #e0e0e0;
+  text-decoration: none;
+}
+footer .footer-link:hover {
+  color: #fff;
+}
 footer .first-block {
-  height: calc(272px - 6rem);
-  padding: 3rem 20px;
+  padding: 62px 20px;
 }
 footer .line-green {
   height: 2px;
 }
 footer .last-block {
-  height: calc(113px - 4rem);
-  padding: 2rem 20px;
+  padding: 40px 20px;
+}
+footer .first-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+footer .first-flex h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  width: 270px;
+  margin-bottom: 15px;
+}
+footer .first-flex .column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+}
+footer .first-flex .flex-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+footer .last-flex {
+  max-width: 1200px;
+  margin: 0 auto 9px auto;
+}
+footer .last-flex div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 432px;
+}
+
+@media (orientation: landscape) {
+  footer .first-flex .column-flex {
+    margin-bottom: 10px;
+  }
+  footer .last-flex div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 432px;
+  }
+}
+@media (orientation: portrait) {
+  footer .first-flex {
+    margin-bottom: 14px;
+  }
+  footer .first-flex .column-flex {
+    margin-bottom: 31px;
+  }
+  footer .last-flex div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 360px;
+    height: 184px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -47,6 +47,11 @@
     font-size: 12px;
 }
 
+.btn-new:hover {
+    color: $white;
+    border-color: $white;
+}
+
 .news-author {
     font-size: 12px;
     text-transform: uppercase;
