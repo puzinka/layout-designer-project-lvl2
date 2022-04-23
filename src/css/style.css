@@ -626,7 +626,6 @@ footer .first-flex .column-flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 375px;
 }
 footer .first-flex .flex-img {
   display: flex;
@@ -679,6 +678,7 @@ footer .last-flex div {
   }
   footer .first-flex .column-flex {
     margin-bottom: 31px;
+    width: 375px;
   }
   footer .first-flex h2 {
     width: 375px;
