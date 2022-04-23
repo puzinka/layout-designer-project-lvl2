@@ -14,6 +14,7 @@ footer {
         line-height: 24px;
         color: $gray;
         text-decoration: none;
+        height: 20px;
     }
 
     .footer-link:hover {
@@ -41,14 +42,14 @@ footer {
             line-height: 27px;
             font-weight: bold;
             width: 270px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
 
         .column-flex {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 270px;
+            width: 375px;
         }
 
         .flex-img {
@@ -113,6 +114,20 @@ footer {
             h2 {
                 width: 375px;
             }
+
+            .clmn-1 {
+                height: 95px;
+            }
+
+            .clmn-2 {
+                height: 95px;
+            }
+
+            /*
+            .clmn-3 {
+                height: 70px;
+            }
+            */
 
             /*width*/
             .clmn-1 a:nth-child(1) {
