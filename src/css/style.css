@@ -632,6 +632,7 @@ footer .first-flex .flex-img {
   flex-direction: row;
   justify-content: space-between;
   width: 150px;
+  align-items: center;
 }
 footer .last-flex {
   max-width: 1200px;
@@ -668,9 +669,46 @@ footer .last-flex div {
     margin-bottom: 14px;
     flex-direction: column;
     width: 375px;
+    /*width*/
   }
   footer .first-flex .column-flex {
     margin-bottom: 31px;
+  }
+  footer .first-flex h2 {
+    width: 375px;
+  }
+  footer .first-flex .clmn-1 a:nth-child(1) {
+    width: 143px;
+  }
+  footer .first-flex .clmn-1 a:nth-child(2) {
+    width: 64px;
+  }
+  footer .first-flex .clmn-1 a:nth-child(3) {
+    width: 98px;
+  }
+  footer .first-flex .clmn-1 a:nth-child(4) {
+    width: 55px;
+  }
+  footer .first-flex .clmn-2 a:nth-child(1) {
+    width: 94px;
+  }
+  footer .first-flex .clmn-2 a:nth-child(2) {
+    width: 61px;
+  }
+  footer .first-flex .clmn-2 a:nth-child(3) {
+    width: 181px;
+  }
+  footer .first-flex .clmn-2 a:nth-child(4) {
+    width: 182px;
+  }
+  footer .first-flex .clmn-3 a:nth-child(1) {
+    width: 122px;
+  }
+  footer .first-flex .clmn-3 a:nth-child(2) {
+    width: 375px;
+  }
+  footer .first-flex .clmn-3 a:nth-child(3) {
+    width: 130px;
   }
   footer .last-flex div {
     display: flex;
