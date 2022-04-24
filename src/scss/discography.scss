@@ -1,0 +1,91 @@
+#page-discography {
+    padding: 100px 20px 0 20px;
+
+    h2,
+    h3 {
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 27px;  
+    }
+
+    h2 {
+        margin-bottom: 48px;
+        text-transform: uppercase;
+    }
+
+    .discography {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .discography-info {
+        p {
+            margin: 0;
+        }
+    }
+
+    .discography-item {
+        margin-right: 50px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (orientation: landscape) {
+    #page-discography {
+        h2 {
+            color: $white;
+            font-size: 38px;
+            line-height: 57px;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .discography {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discography-item {
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        .discography-info {
+            width: 250px;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    #page-discography {
+        h2 {
+            color: $white;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+
+    .discography {
+        min-width: 375px;
+    }
+
+    .discography-item {
+        img {
+            width: 137px;
+            height: 137px;
+        }
+
+        .discography-info {
+            width: 137px;
+        }
+    }
+}
