@@ -310,6 +310,92 @@ header input::-moz-placeholder {
     height: 147px;
   }
 }
+#page-popular-track {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  padding: 100px 20px 0 20px;
+}
+#page-popular-track h2,
+#page-popular-track h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#page-popular-track h3 {
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+#page-popular-track h2 {
+  margin-bottom: 48px;
+}
+#page-popular-track .column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#page-popular-track .track-flex {
+  display: flex;
+  justify-content: space-between;
+}
+#page-popular-track .track-flex img {
+  width: 55px;
+  height: 55px;
+}
+#page-popular-track .track-flex .track-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#page-popular-track .track-flex .track-info .name-track p {
+  margin: 0;
+}
+#page-popular-track .track-flex .popular-track {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (orientation: landscape) {
+  #page-popular-track h2 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 57px;
+  }
+  #page-popular-track .column-flex {
+    height: 215px;
+  }
+  #page-popular-track .track-flex {
+    flex-direction: row;
+    max-width: 1150px;
+  }
+  #page-popular-track .track-flex .popular-track {
+    width: 550px;
+  }
+  #page-popular-track .track-flex .track-info {
+    width: 480px;
+  }
+}
+@media (orientation: portrait) {
+  #page-popular-track h2 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #page-popular-track .column-flex {
+    height: 455px;
+  }
+  #page-popular-track .track-flex {
+    flex-direction: column;
+    width: 375px;
+    height: 135px;
+  }
+  #page-popular-track .track-flex .popular-track {
+    min-width: 375px;
+  }
+  #page-popular-track .track-flex .track-info {
+    min-width: 305px;
+  }
+}
 footer {
   width: 100%;
 }

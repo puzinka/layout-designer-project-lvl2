@@ -1,0 +1,112 @@
+#page-popular-track {
+    font-size: 12.8px;
+    line-height: 19.2px;
+    padding: 100px 20px 0 20px;
+
+    h2,
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 12.8px;
+        line-height: 19.2px;  
+    }
+
+    h2 {
+        margin-bottom: 48px;
+    }
+
+    .column-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .track-flex {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .track-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .name-track {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .popular-track {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    #page-popular-track {
+        h2 {
+            color: $white;
+            font-size: 38px;
+            line-height: 57px;
+        }
+
+        .column-flex {
+            height: 215px;
+        }
+
+        .track-flex {
+            flex-direction: row;
+            max-width: 1150px;
+            
+            .popular-track {
+                width: 550px;
+            }
+
+            .track-info {
+                width: 480px;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    #page-popular-track {
+        h2 {
+            color: $white;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        .column-flex {
+            height: 455px;
+        }
+
+        .track-flex {
+            flex-direction: column;
+            width: 375px;
+            height: 135px;
+            
+
+            .popular-track {
+                min-width: 375px;
+            }
+
+            .track-info {
+                min-width: 305px;
+            }
+        }
+    }
+    
+}
