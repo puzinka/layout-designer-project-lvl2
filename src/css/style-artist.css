@@ -407,10 +407,6 @@ header input::-moz-placeholder {
 #page-discography h3 {
   font-weight: bold;
 }
-#page-discography h3 {
-  font-size: 18px;
-  line-height: 27px;
-}
 #page-discography h2 {
   margin-bottom: 48px;
   text-transform: uppercase;
@@ -420,6 +416,12 @@ header input::-moz-placeholder {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+#page-discography .discography .discography-item:nth-child(5) {
+  margin-bottom: 0;
+}
+#page-discography .discography .discography-item:nth-child(6) {
+  margin-bottom: 0;
 }
 #page-discography .discography-info p {
   margin: 0;
@@ -438,6 +440,10 @@ header input::-moz-placeholder {
     margin-left: auto;
     margin-right: auto;
   }
+  #page-discography h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 
   .discography {
     max-width: 1200px;
@@ -448,6 +454,7 @@ header input::-moz-placeholder {
   .discography-item img {
     width: 250px;
     height: 250px;
+    margin-bottom: 10px;
   }
   .discography-item .discography-info {
     width: 250px;
@@ -459,6 +466,10 @@ header input::-moz-placeholder {
     font-size: 18px;
     line-height: 27px;
   }
+  #page-discography h3 {
+    font-size: 17px;
+    line-height: 27px;
+  }
 
   .discography {
     min-width: 375px;
@@ -467,6 +478,7 @@ header input::-moz-placeholder {
   .discography-item img {
     width: 137px;
     height: 137px;
+    margin-bottom: 10px;
   }
   .discography-item .discography-info {
     width: 137px;

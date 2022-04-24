@@ -6,11 +6,6 @@
         font-weight: bold;
     }
 
-    h3 {
-        font-size: 18px;
-        line-height: 27px;  
-    }
-
     h2 {
         margin-bottom: 48px;
         text-transform: uppercase;
@@ -21,6 +16,14 @@
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
+
+        .discography-item:nth-child(5) {
+            margin-bottom: 0;
+        }
+
+        .discography-item:nth-child(6) {
+            margin-bottom: 0;
+        }
     }
 
     .discography-info {
@@ -45,6 +48,11 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        h3 {
+            font-size: 18px;
+            line-height: 27px;  
+        }
     }
 
     .discography {
@@ -57,6 +65,7 @@
         img {
             width: 250px;
             height: 250px;
+            margin-bottom: 10px;
         }
 
         .discography-info {
@@ -72,6 +81,11 @@
             font-size: 18px;
             line-height: 27px;
         }
+
+        h3 {
+            font-size: 17px;
+            line-height: 27px;  
+        }
     }
 
     .discography {
@@ -82,6 +96,7 @@
         img {
             width: 137px;
             height: 137px;
+            margin-bottom: 10px;
         }
 
         .discography-info {
