@@ -1,0 +1,127 @@
+#page-similar {
+    padding: 100px 20px;
+
+    h2,
+    h3 {
+        font-weight: bold;
+    }
+
+    h2 {
+        margin-bottom: 48px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .similar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .similar:nth-child(5) {
+            margin-bottom: 0;
+        }
+
+        .similar:nth-child(6) {
+            margin-bottom: 0;
+        }
+
+        .similar:nth-child(7) {
+            margin-bottom: 0;
+        }
+
+        .similar:nth-child(8) {
+            margin-bottom: 0;
+        }
+    }
+
+    .similar-info {
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .similar-item {
+        margin-right: 50px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (orientation: landscape) {
+    #page-similar {
+        h2 {
+            color: $white;
+            font-size: 38px;
+            line-height: 57px;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h3 {
+            font-size: 18px;
+            line-height: 27px;  
+        }
+    }
+
+    .similar {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .similar-item {
+        img {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+
+        .similar-info {
+            width: 250px;
+
+            p {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    #page-similar {
+        h2 {
+            color: $white;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        h3 {
+            font-size: 18px;
+            line-height: 27px;  
+        }
+    }
+
+    .similar {
+        min-width: 375px;
+    }
+
+    .similar-item {
+        img {
+            width: 137px;
+            height: 137px;
+            margin-bottom: 10px;
+        }
+
+        .similar-info {
+            width: 137px;
+
+            p {
+                width: 137px;
+            }
+        }
+    }
+}
