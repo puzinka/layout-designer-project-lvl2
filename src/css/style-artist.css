@@ -327,14 +327,10 @@ header input::-moz-placeholder {
 #page-popular-track h2 {
   margin-bottom: 48px;
 }
-#page-popular-track .column-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 #page-popular-track .track-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-bottom: 25px;
 }
 #page-popular-track .track-flex img {
   width: 55px;
@@ -354,6 +350,9 @@ header input::-moz-placeholder {
   justify-content: space-between;
   align-items: center;
 }
+#page-popular-track .track-flex:last-child {
+  margin-bottom: 0;
+}
 
 @media (orientation: landscape) {
   #page-popular-track h2 {
@@ -364,13 +363,14 @@ header input::-moz-placeholder {
     margin-left: auto;
     margin-right: auto;
   }
-  #page-popular-track .column-flex {
-    height: 215px;
-  }
   #page-popular-track .track-flex {
     flex-direction: row;
     width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #page-popular-track .track-flex .popular-track:first-child {
+    margin-right: 50px;
   }
   #page-popular-track .track-flex .popular-track {
     width: 550px;
@@ -385,13 +385,13 @@ header input::-moz-placeholder {
     font-size: 18px;
     line-height: 27px;
   }
-  #page-popular-track .column-flex {
-    height: 455px;
-  }
   #page-popular-track .track-flex {
     flex-direction: column;
     width: 375px;
     height: 135px;
+  }
+  #page-popular-track .track-flex .popular-track:first-child {
+    margin-bottom: 25px;
   }
   #page-popular-track .track-flex .popular-track {
     min-width: 375px;
