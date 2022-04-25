@@ -12,7 +12,7 @@
         margin-bottom: 16px;
     }
 
-    .btn-download {
+    .btn {
         @include button-color (12.8px, $red, 32px);
         padding: 19px 41px;
         text-decoration: none;

@@ -215,8 +215,7 @@ header input::-moz-placeholder {
   color: #fff;
   text-align: center;
 }
-
-.btn1 {
+.form-container .btn {
   border: solid 1px;
   border-radius: 5px;
   background: none;
@@ -442,45 +441,51 @@ header input::-moz-placeholder {
 #page-news h3 {
   text-transform: capitalize;
 }
-#page-news .news-item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: left;
-}
-#page-news .news-item p {
-  margin-bottom: 24px;
-  color: #cacaca;
-}
-#page-news .news-item .btn {
+#page-news .btn {
   padding: 16px 30px;
   border: solid 1px;
   border-radius: 5px;
   background: none;
   outline: none;
 }
-#page-news .direct {
+
+.news-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+.news-item p {
+  margin-bottom: 24px;
+  color: #cacaca;
+}
+
+.direct {
   flex-direction: row;
 }
-#page-news .revers {
+
+.revers {
   flex-direction: row-reverse;
 }
-#page-news .revers p {
+.revers p {
   margin-bottom: 17px;
 }
-#page-news .btn-new {
+
+.btn-new {
   text-decoration: none;
   text-transform: uppercase;
   color: #cacaca;
   border-color: #cacaca;
   font-size: 12px;
 }
-#page-news .btn-new:hover {
+
+.btn-new:hover {
   color: #fff;
   border-color: #fff;
 }
-#page-news .news-author {
+
+.news-author {
   font-size: 12px;
   text-transform: uppercase;
   display: flex;
@@ -490,12 +495,12 @@ header input::-moz-placeholder {
   width: 185px;
   height: 20px;
 }
-#page-news .news-author .date {
+.news-author .date {
   width: 68px;
   height: 20px;
   margin: 0;
 }
-#page-news .news-author .name-user {
+.news-author .name-user {
   color: #f89202;
   width: 68px;
   height: 20px;
@@ -556,7 +561,7 @@ header input::-moz-placeholder {
 #page-app .mobile-app-p {
   margin-bottom: 16px;
 }
-#page-app .btn-download {
+#page-app .btn {
   font-size: 12.8px;
   border: none;
   outline: none;

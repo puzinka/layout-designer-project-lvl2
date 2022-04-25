@@ -13,71 +13,71 @@
         text-transform: capitalize;
     }
 
-    .news-item {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: left;
-
-        p {
-            margin-bottom: 24px;
-            color: $dark-gray;
-        }
-
-        .btn {
-            padding: 16px 30px;
-            @include btn;
-        }
+    .btn {
+        padding: 16px 30px;
+        @include btn;
     }
+}
 
-    .direct {
-        flex-direction: row;
-    }
+.news-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
 
-    .revers {
-        flex-direction: row-reverse;
-
-        p {
-            margin-bottom: 17px;
-        }
-    }
-
-    .btn-new {
-        text-decoration: none;
-        text-transform: uppercase;
+    p {
+        margin-bottom: 24px;
         color: $dark-gray;
-        border-color: $dark-gray;
-        font-size: 12px;
     }
+}
 
-    .btn-new:hover {
-        color: $white;
-        border-color: $white;
+.direct {
+    flex-direction: row;
+}
+
+.revers {
+    flex-direction: row-reverse;
+
+    p {
+        margin-bottom: 17px;
     }
+}
 
-    .news-author {
-        font-size: 12px;
-        text-transform: uppercase;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 185px;
+.btn-new {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $dark-gray;
+    border-color: $dark-gray;
+    font-size: 12px;
+}
+
+.btn-new:hover {
+    color: $white;
+    border-color: $white;
+}
+
+.news-author {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 185px;
+    height: 20px;
+
+    .date {
+        width: 68px;
         height: 20px;
+        margin: 0;
+    }
 
-        .date {
-            width: 68px;
-            height: 20px;
-            margin: 0;
-        }
-
-        .name-user {
-            color: $orange;
-            width: 68px;
-            height: 20px;
-            margin: 0;
-        }
+    .name-user {
+        color: $orange;
+        width: 68px;
+        height: 20px;
+        margin: 0;
     }
 }
 

@@ -41,10 +41,10 @@
 
         @include button-color (13px, $green, 5px);
     }
-}
 
-.btn1 {
-    @include btn;
+    .btn {
+        @include btn;
+    }
 }
 
 .inpt {
