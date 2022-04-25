@@ -167,21 +167,25 @@ header input::-moz-placeholder {
     width: 24px;
   }
 }
+#page-description {
+  padding: 200px 20px;
+}
+
 .banner-main {
   background-image: url(../images/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  width: 1440px;
+  position: absolute;
+  top: 0;
+  left: calc(50vw - 720px);
+  z-index: -1;
 }
 
 .main-section {
-  position: absolute;
   margin: 0 auto;
-  padding: 200px 20px;
   text-align: center;
-  left: 0;
-  right: 0;
 }
 
 .form-container {
