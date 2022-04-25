@@ -510,6 +510,8 @@ header input::-moz-placeholder {
     height: 284px;
   }
   .news-item h3 {
+    font-size: 30px;
+    line-height: 45px;
     width: 575px;
     height: 45px;
     margin-bottom: 30px;
@@ -532,6 +534,8 @@ header input::-moz-placeholder {
     margin-bottom: 50px;
   }
   .news-item h3 {
+    font-size: 16px;
+    line-height: 24px;
     height: 23px;
     margin-bottom: 15px;
   }
