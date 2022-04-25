@@ -442,47 +442,45 @@ header input::-moz-placeholder {
 #page-news h3 {
   text-transform: capitalize;
 }
-
-.news-item {
+#page-news .news-item {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
 }
-.news-item p {
+#page-news .news-item p {
   margin-bottom: 24px;
   color: #cacaca;
 }
-.news-item .btn-new {
-  padding: 19px 32px;
+#page-news .news-item .btn {
+  padding: 16px 30px;
+  border: solid 1px;
+  border-radius: 5px;
+  background: none;
+  outline: none;
 }
-
-.direct {
+#page-news .direct {
   flex-direction: row;
 }
-
-.revers {
+#page-news .revers {
   flex-direction: row-reverse;
 }
-.revers p {
+#page-news .revers p {
   margin-bottom: 17px;
 }
-
-.btn-new {
+#page-news .btn-new {
   text-decoration: none;
   text-transform: uppercase;
   color: #cacaca;
   border-color: #cacaca;
   font-size: 12px;
 }
-
-.btn-new:hover {
+#page-news .btn-new:hover {
   color: #fff;
   border-color: #fff;
 }
-
-.news-author {
+#page-news .news-author {
   font-size: 12px;
   text-transform: uppercase;
   display: flex;
@@ -492,12 +490,12 @@ header input::-moz-placeholder {
   width: 185px;
   height: 20px;
 }
-.news-author .date {
+#page-news .news-author .date {
   width: 68px;
   height: 20px;
   margin: 0;
 }
-.news-author .name-user {
+#page-news .news-author .name-user {
   color: #f89202;
   width: 68px;
   height: 20px;
