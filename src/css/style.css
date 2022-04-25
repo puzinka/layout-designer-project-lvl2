@@ -439,6 +439,9 @@ header input::-moz-placeholder {
 #page-news h2 {
   margin-bottom: 48px;
 }
+#page-news h3 {
+  text-transform: capitalize;
+}
 
 .news-item {
   display: flex;
