@@ -591,7 +591,6 @@ footer h2 {
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
-  width: 270px;
   margin-bottom: 16px;
 }
 footer .footer-link {
@@ -642,6 +641,9 @@ footer .last-block .last-flex .footer-link {
 }
 
 @media (orientation: landscape) {
+  footer h2 {
+    width: 270px;
+  }
   footer .first-flex {
     display: flex;
     flex-direction: row;
@@ -663,6 +665,9 @@ footer .last-block .last-flex .footer-link {
   }
 }
 @media (orientation: portrait) {
+  footer h2 {
+    width: 375px;
+  }
   footer .first-flex {
     display: flex;
     flex-direction: column;
