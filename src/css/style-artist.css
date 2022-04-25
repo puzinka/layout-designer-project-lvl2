@@ -167,19 +167,24 @@ header input::-moz-placeholder {
     width: 24px;
   }
 }
+#page-description {
+  padding: 200px 20px;
+}
 #page-description .banner-main {
   background-image: url(../images/Morten-Harket.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -1;
 }
 #page-description .main-section {
-  position: absolute;
-  padding: 0 20px;
-  left: 0;
-  right: 0;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 #page-description .main-section div {
   display: flex;
@@ -188,7 +193,7 @@ header input::-moz-placeholder {
 #page-description .main-section p {
   margin-bottom: 49px;
 }
-#page-description .btn-banner {
+#page-description .btn {
   font-size: 13px;
   border: none;
   outline: none;
@@ -197,6 +202,7 @@ header input::-moz-placeholder {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 20px 30px;
 }
 #page-description .btn-red::before {
   position: absolute;
@@ -207,7 +213,8 @@ header input::-moz-placeholder {
   width: 20px;
   height: 20px;
   filter: invert(1);
-  left: 32px;
+  left: 30px;
+  top: 20px;
 }
 #page-description .btn-purple::before {
   position: absolute;
@@ -218,17 +225,30 @@ header input::-moz-placeholder {
   width: 20px;
   height: 20px;
   filter: invert(1);
-  left: 32px;
+  left: 30px;
+  top: 20px;
 }
 #page-description .btn-red {
   background: #95390c;
   position: relative;
-  padding: 20px 54px;
+  width: 200px;
+  height: 62px;
+}
+#page-description .btn-red p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 30px;
 }
 #page-description .btn-purple {
   background: #5328a1;
   position: relative;
-  padding: 20px 81px;
+  width: 200px;
+  height: 62px;
+}
+#page-description .btn-purple p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
 }
 
 @media (orientation: landscape) {
@@ -262,9 +282,6 @@ header input::-moz-placeholder {
     height: 713px;
   }
 
-  .main-section {
-    margin: 250px auto 200px auto;
-  }
   .main-section div {
     flex-direction: row;
     width: 425px;
@@ -301,9 +318,6 @@ header input::-moz-placeholder {
     height: 730px;
   }
 
-  .main-section {
-    margin: 225px auto 200px auto;
-  }
   .main-section div {
     flex-direction: column;
     width: 201px;
