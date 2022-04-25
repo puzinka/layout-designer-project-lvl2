@@ -178,7 +178,7 @@ header input::-moz-placeholder {
 .main-section {
   position: absolute;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 200px 20px;
   text-align: center;
   left: 0;
   right: 0;
@@ -258,9 +258,6 @@ header input::-moz-placeholder {
     margin: 0;
   }
 
-  .main-section {
-    margin: 200px auto;
-  }
   .main-section p {
     margin: 32px 0 16px 0;
   }
@@ -297,7 +294,8 @@ header input::-moz-placeholder {
   }
 
   .main-section {
-    margin: 247px 20px;
+    margin-top: 47px;
+    margin-bottom: 47px;
   }
 
   .form-container input {
