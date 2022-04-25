@@ -284,6 +284,7 @@ header input::-moz-placeholder {
 
   .main-section {
     margin-top: 50px;
+    margin-bottom: 22px;
   }
   .main-section div {
     flex-direction: row;
