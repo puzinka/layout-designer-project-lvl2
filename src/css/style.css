@@ -177,7 +177,8 @@ header input::-moz-placeholder {
 
 .main-section {
   position: absolute;
-  margin: 200px auto;
+  margin: 0 auto;
+  padding: 200px 0;
   text-align: center;
   left: 0;
   right: 0;
