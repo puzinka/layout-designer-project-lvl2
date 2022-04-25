@@ -216,7 +216,7 @@ header input::-moz-placeholder {
   text-align: center;
 }
 
-.btn {
+.btn1 {
   border: solid 1px;
   border-radius: 5px;
   background: none;
@@ -321,6 +321,13 @@ header input::-moz-placeholder {
   margin-bottom: 200px;
   text-transform: uppercase;
 }
+#page-pricing .btn {
+  border: solid 1px;
+  border-radius: 5px;
+  background: none;
+  outline: none;
+  padding: 20px 112px;
+}
 
 .pricing-container {
   display: flex;
@@ -388,7 +395,6 @@ header input::-moz-placeholder {
   }
 
   .link {
-    padding: 24px 112px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -415,7 +421,6 @@ header input::-moz-placeholder {
   }
 
   .link {
-    padding: 24px 115px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
