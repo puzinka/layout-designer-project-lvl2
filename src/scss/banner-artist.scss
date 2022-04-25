@@ -14,7 +14,6 @@
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
 
         div {
             display: flex;
@@ -27,7 +26,8 @@
     }
 
     .btn {
-        font-size: 13px;
+        font-size: 12.8px;
+        font-weight: 400;
         border: none;
         outline: none;
         border-radius: 5px;
@@ -102,6 +102,8 @@
     }
 
     .main-section {
+        margin-top: 50px;
+
         div {
             flex-direction: row;
             width: 425px;
@@ -118,6 +120,8 @@
     }
 
     .main-section {
+        margin-top: 25px;
+
         div {
             flex-direction: column;
             width: 201px;

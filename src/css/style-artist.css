@@ -184,7 +184,6 @@ header input::-moz-placeholder {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
 }
 #page-description .main-section div {
   display: flex;
@@ -194,7 +193,8 @@ header input::-moz-placeholder {
   margin-bottom: 49px;
 }
 #page-description .btn {
-  font-size: 13px;
+  font-size: 12.8px;
+  font-weight: 400;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -282,6 +282,9 @@ header input::-moz-placeholder {
     height: 713px;
   }
 
+  .main-section {
+    margin-top: 50px;
+  }
   .main-section div {
     flex-direction: row;
     width: 425px;
@@ -318,6 +321,9 @@ header input::-moz-placeholder {
     height: 730px;
   }
 
+  .main-section {
+    margin-top: 25px;
+  }
   .main-section div {
     flex-direction: column;
     width: 201px;
