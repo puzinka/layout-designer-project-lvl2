@@ -70,8 +70,13 @@
         .similar-info {
             width: 250px;
 
+            h3 {
+                height: 27px;
+            }
+
             p {
                 width: 250px;
+                height: 48px;
             }
         }
     }

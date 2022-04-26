@@ -506,6 +506,15 @@ header input::-moz-placeholder {
   .discography-item .discography-info {
     width: 137px;
   }
+  .discography-item .discography-info h3 {
+    height: 27px;
+  }
+  .discography-item .discography-info .h3-height {
+    height: 54px;
+  }
+  .discography-item .discography-info .h3-height-margin {
+    margin-top: 54px;
+  }
 }
 #page-similar {
   padding: 100px 20px 0 20px;
@@ -567,8 +576,12 @@ header input::-moz-placeholder {
   .similar-item .similar-info {
     width: 250px;
   }
+  .similar-item .similar-info h3 {
+    height: 27px;
+  }
   .similar-item .similar-info p {
     width: 250px;
+    height: 48px;
   }
 }
 @media (orientation: portrait) {
