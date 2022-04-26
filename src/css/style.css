@@ -183,11 +183,17 @@ header input::-moz-placeholder {
   z-index: -1;
 }
 
-.main-section {
+main {
   margin: 0 auto;
   text-align: center;
 }
 
+/*
+.main-section {
+    margin: 0 auto;
+    text-align: center;
+}
+*/
 .form-container {
   display: flex;
   flex-direction: row;
@@ -197,10 +203,10 @@ header input::-moz-placeholder {
   margin: 0 auto;
 }
 .form-container input::-webkit-input-placeholder {
-  color: #fff;
+  color: #cacaca;
 }
 .form-container input::-moz-placeholder {
-  color: #fff;
+  color: #cacaca;
 }
 .form-container .btn-banner {
   min-width: 374px;
@@ -227,6 +233,7 @@ header input::-moz-placeholder {
   margin-bottom: 1.5rem;
   border: solid 1px #fff;
   background: none;
+  color: #fff;
 }
 
 @media (orientation: landscape) {
@@ -260,9 +267,17 @@ header input::-moz-placeholder {
     margin: 0;
   }
 
-  .main-section p {
+  main p {
     margin: 32px 0 16px 0;
   }
+
+  /*
+  .main-section {
+      p {
+          margin: 32px 0 16px 0;
+      }
+  }
+  */
 }
 @media (orientation: portrait) {
   .banner-main {
@@ -299,6 +314,11 @@ header input::-moz-placeholder {
     margin-top: 47px;
   }
 
+  /*
+  .main-section {
+      margin-top: 47px;
+  }
+  */
   .form-container input {
     flex: 1;
   }

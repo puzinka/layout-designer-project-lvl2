@@ -12,10 +12,17 @@
     z-index: -1;
 }
 
+main {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
 .main-section {
     margin: 0 auto;
     text-align: center;
 }
+*/
 
 .form-container {
     display: flex;
@@ -26,11 +33,11 @@
     margin: 0 auto;
 
     input::-webkit-input-placeholder {
-        color: $white;
+        color: $dark-gray;
     }
 
     input::-moz-placeholder {
-        color: $white;
+        color: $dark-gray;
     }
 
     .btn-banner {
@@ -55,6 +62,7 @@
     margin-bottom: 1.5rem;
     border: solid 1px $white;
     background: none;
+    color: $white;
 }
 
 @media (orientation: landscape) {
@@ -65,11 +73,19 @@
 
     @include h (landscape);
 
+    main {
+        p {
+            margin: 32px 0 16px 0;
+        }
+    }
+
+    /*
     .main-section {
         p {
             margin: 32px 0 16px 0;
         }
     }
+    */
     
 }
 
@@ -84,6 +100,12 @@
     .main-section {
         margin-top: 47px;
     }
+    
+    /*
+    .main-section {
+        margin-top: 47px;
+    }
+    */
 
     .form-container input {
         flex: 1;
