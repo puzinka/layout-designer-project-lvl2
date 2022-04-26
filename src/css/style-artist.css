@@ -49,10 +49,7 @@ header input {
   color: #cacaca;
   text-transform: uppercase;
 }
-header input::-webkit-input-placeholder {
-  color: #757575;
-}
-header input::-moz-placeholder {
+header input::placeholder {
   color: #757575;
 }
 

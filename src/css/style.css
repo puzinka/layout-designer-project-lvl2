@@ -49,10 +49,7 @@ header input {
   color: #cacaca;
   text-transform: uppercase;
 }
-header input::-webkit-input-placeholder {
-  color: #757575;
-}
-header input::-moz-placeholder {
+header input::placeholder {
   color: #757575;
 }
 
@@ -186,10 +183,7 @@ header input::-moz-placeholder {
   max-width: 570px;
   margin: 0 auto;
 }
-.form-container input::-webkit-input-placeholder {
-  color: #cacaca;
-}
-.form-container input::-moz-placeholder {
+.form-container input::placeholder {
   color: #cacaca;
 }
 .form-container .btn-banner {

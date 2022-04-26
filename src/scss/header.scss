@@ -40,11 +40,7 @@ header {
     text-transform: uppercase;
   }
 
-  input::-webkit-input-placeholder {
-    color: $placeholder;
-  }
-
-  input::-moz-placeholder {
+  input::placeholder {
     color: $placeholder;
   }
 }

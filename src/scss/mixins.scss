@@ -1,5 +1,5 @@
 @mixin h($orientation) {
-  @if ($orientation == landscape) {
+  @if $orientation == landscape {
     h1 {
       color: $white;
       font-size: 60px;
