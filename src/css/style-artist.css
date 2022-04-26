@@ -128,8 +128,7 @@ header input::-moz-placeholder {
   header {
     font-size: 11px;
     flex-flow: column nowrap;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 20px;
     right: 0;
     left: 0;
     top: 25px;
