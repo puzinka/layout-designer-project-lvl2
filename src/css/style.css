@@ -216,7 +216,6 @@ header input::-moz-placeholder {
   text-align: center;
 }
 .form-container .btn {
-  border-radius: 5px;
   outline: none;
 }
 
@@ -228,6 +227,7 @@ header input::-moz-placeholder {
   border: solid 2px #fff;
   background: none;
   color: #fff;
+  border-radius: 3px;
 }
 
 @media (orientation: landscape) {
