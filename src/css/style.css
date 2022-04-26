@@ -221,9 +221,9 @@ header input::-moz-placeholder {
 
 .inpt {
   min-width: 250px;
-  min-height: 47px;
+  min-height: 45px;
   padding-left: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 1.5rem;
   border: solid 2px #fff;
   background: none;
   color: #fff;
