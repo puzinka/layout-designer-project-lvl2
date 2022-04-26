@@ -1,10 +1,10 @@
 @font-face {
   font-family: Roboto-Regular, sans-serif;
-  src: url(fonts/Roboto/Roboto-Regular.ttf);
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: Roboto-Bold, sans-serif;
-  src: url(fonts/Roboto/Roboto-Bold.ttf);
+  src: url("fonts/Roboto/Roboto-Bold.ttf");
 }
 * {
   top: 0;
@@ -37,8 +37,7 @@ header nav a:hover {
 header .logo {
   color: #fff;
   display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: start;
   line-height: 0;
@@ -60,8 +59,7 @@ header input::-moz-placeholder {
 @media (orientation: landscape) and (min-width: 1201px) {
   header {
     font-size: 11px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -71,11 +69,10 @@ header input::-moz-placeholder {
   }
   header nav {
     display: inline-flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 314px;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-right: 450px;
   }
   header .logo {
@@ -96,8 +93,7 @@ header input::-moz-placeholder {
 @media (orientation: landscape) and (max-width: 1200px) {
   header {
     font-size: 11px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -107,11 +103,10 @@ header input::-moz-placeholder {
   }
   header nav {
     display: inline-flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 314px;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-right: calc(100vw - 314px - 86px - 248px - 102px);
   }
   header .logo {
@@ -132,8 +127,7 @@ header input::-moz-placeholder {
 @media (orientation: portrait) {
   header {
     font-size: 11px;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     margin-left: auto;
     margin-right: auto;
     right: 0;
@@ -145,10 +139,9 @@ header input::-moz-placeholder {
   }
   header nav {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
   }
   header .search {
     display: flex;
@@ -172,7 +165,7 @@ header input::-moz-placeholder {
 }
 
 .banner-main {
-  background-image: url(../images/banner.png);
+  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,9 +183,8 @@ header input::-moz-placeholder {
 
 .form-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   max-width: 570px;
   margin: 0 auto;
 }
@@ -263,7 +255,7 @@ header input::-moz-placeholder {
   }
 
   .main-section p {
-    margin: 32px 0 16px 0;
+    margin: 32px 0 16px;
   }
 }
 @media (orientation: portrait) {
@@ -306,7 +298,7 @@ header input::-moz-placeholder {
   }
 }
 #page-pricing {
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
   text-align: center;
   max-width: 1200px;
   min-width: 374px;
@@ -328,8 +320,7 @@ header input::-moz-placeholder {
 
 .pricing-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -352,19 +343,19 @@ header input::-moz-placeholder {
 }
 
 .bg-free {
-  background-image: url(../images/subscribe_1.png);
+  background-image: url("../images/subscribe_1.png");
   background-position: center;
   background-size: cover;
 }
 
 .bg-standart {
-  background-image: url(../images/subscribe_2.png);
+  background-image: url("../images/subscribe_2.png");
   background-position: center;
   background-size: cover;
 }
 
 .bg-premium {
-  background-image: url(../images/subscribe_3.png);
+  background-image: url("../images/subscribe_3.png");
   background-position: center;
   background-size: cover;
 }
@@ -406,7 +397,7 @@ header input::-moz-placeholder {
 }
 @media (orientation: portrait) {
   #page-pricing h2 {
-    margin: 0 20px 49px 20px;
+    margin: 0 20px 49px;
   }
 
   .pricing-item {
@@ -433,7 +424,7 @@ header input::-moz-placeholder {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
   text-align: center;
 }
 #page-news h2 {
@@ -452,8 +443,7 @@ header input::-moz-placeholder {
 
 .news-item {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   text-align: left;
 }
@@ -490,8 +480,7 @@ header input::-moz-placeholder {
   font-size: 12px;
   text-transform: uppercase;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   width: 185px;
   height: 20px;
@@ -552,8 +541,8 @@ header input::-moz-placeholder {
 }
 #page-app {
   max-width: 1200px;
-  margin: 0 auto 100px auto;
-  padding: 100px 20px 0 20px;
+  margin: 0 auto 100px;
+  padding: 100px 20px 0;
 }
 #page-app h2 {
   text-align: center;
@@ -630,7 +619,7 @@ footer .bg-green {
   height: 2px;
 }
 footer .first-block {
-  padding: 62px 20px 71px 20px;
+  padding: 62px 20px 71px;
 }
 footer .first-block .first-flex ul {
   padding: 0;
@@ -653,7 +642,7 @@ footer .first-block p {
   margin: 0;
 }
 footer .last-block {
-  padding: 40px 20px 47px 20px;
+  padding: 40px 20px 47px;
 }
 footer .last-block .last-flex .footer-link {
   height: 25px;
@@ -677,9 +666,8 @@ footer .last-block .last-flex .footer-link {
   }
   footer .last-block .last-flex div {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     width: 432px;
   }
 }
@@ -699,9 +687,8 @@ footer .last-block .last-flex .footer-link {
   }
   footer .last-block .last-flex div {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     width: 360px;
     height: 185px;
   }

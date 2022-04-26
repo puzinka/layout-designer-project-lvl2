@@ -26,8 +26,7 @@ header {
   .logo {
     color: $white;
     display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: start;
     line-height: 0;
@@ -63,8 +62,7 @@ header {
     $input-height: 25px;
 
     font-size: $font-size;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -74,11 +72,10 @@ header {
 
     nav {
       display: inline-flex;
-      flex-direction: row;
       justify-content: space-between;
       width: 314px;
       align-items: center;
-      flex-wrap: nowrap;
+      flex-flow: row nowrap;
       margin-right: $mr;
     }
 
@@ -101,15 +98,16 @@ header {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1201px){
- @include header-landscape(450px);
+@media (orientation: landscape) and (min-width: 1201px) {
+  @include header-landscape(450px);
 }
 
-@media (orientation: landscape) and (max-width: 1200px){
+@media (orientation: landscape) and (max-width: 1200px) {
   $logo-width: 102px;
   $input-width: 248px;
+
   @include header-landscape(calc(100vw - 314px - 86px - $input-width - $logo-width));
-} 
+}
 
 @media (orientation: portrait) {
   header {
@@ -124,8 +122,7 @@ header {
     $input-height: 25px;
 
     font-size: $font-size;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow:column nowrap;
     margin-left: auto;
     margin-right: auto;
     right: 0;
@@ -135,13 +132,11 @@ header {
     height: 145px;
     justify-content: space-between;
 
-
     nav {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
       align-items: start;
-      flex-wrap: nowrap;
+      flex-flow: column nowrap;
     }
 
     .search {

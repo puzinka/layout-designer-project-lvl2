@@ -3,7 +3,7 @@
 }
 
 .banner-main {
-  @include bg (url(../images/banner.png));
+  @include bg (url("../images/banner.png"));
   background-repeat: no-repeat;
   width: 1440px;
   position: absolute;
@@ -19,9 +19,8 @@
 
 .form-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   max-width: 570px;
   margin: 0 auto;
 
@@ -61,16 +60,16 @@
 @media (orientation: landscape) {
   .banner-main {
     height: 750px;
-    width: 100%
+    width: 100%;
   }
 
   @include h (landscape);
 
   .main-section {
     p {
-      margin: 32px 0 16px 0;
+      margin: 32px 0 16px;
     }
-  }  
+  }
 }
 
 @media (orientation: portrait) {

@@ -1,5 +1,5 @@
 #page-pricing {
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
   text-align: center;
   max-width: 1200px;
   min-width: 374px;
@@ -20,8 +20,7 @@
 
 .pricing-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -46,15 +45,15 @@
 }
 
 .bg-free {
-  @include bg (url(../images/subscribe_1.png));
+  @include bg (url("../images/subscribe_1.png"));
 }
 
 .bg-standart {
-  @include bg (url(../images/subscribe_2.png));
+  @include bg (url("../images/subscribe_2.png"));
 }
 
 .bg-premium {
-  @include bg (url(../images/subscribe_3.png));
+  @include bg (url("../images/subscribe_3.png"));
 }
 
 .pricing-footer {
@@ -62,7 +61,6 @@
   margin-top: 64px;
   height: 59px;
 }
-
 
 @media (orientation: landscape) {
   #page-pricing {
@@ -99,7 +97,7 @@
 @media (orientation: portrait) {
   #page-pricing {
     h2 {
-      margin: 0 20px 49px 20px;
+      margin: 0 20px 49px;
     }
   }
 

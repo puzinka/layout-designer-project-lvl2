@@ -1,5 +1,5 @@
 #page-similar {
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
   margin-bottom: 100px;
 
   h2 {
@@ -18,9 +18,8 @@
 
   .similar {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
   }
 
   .similar-info {

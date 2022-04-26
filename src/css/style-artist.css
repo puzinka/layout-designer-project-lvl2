@@ -1,10 +1,10 @@
 @font-face {
   font-family: Roboto-Regular, sans-serif;
-  src: url(fonts/Roboto/Roboto-Regular.ttf);
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: Roboto-Bold, sans-serif;
-  src: url(fonts/Roboto/Roboto-Bold.ttf);
+  src: url("fonts/Roboto/Roboto-Bold.ttf");
 }
 * {
   top: 0;
@@ -37,8 +37,7 @@ header nav a:hover {
 header .logo {
   color: #fff;
   display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: start;
   line-height: 0;
@@ -60,8 +59,7 @@ header input::-moz-placeholder {
 @media (orientation: landscape) and (min-width: 1201px) {
   header {
     font-size: 11px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -71,11 +69,10 @@ header input::-moz-placeholder {
   }
   header nav {
     display: inline-flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 314px;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-right: 450px;
   }
   header .logo {
@@ -96,8 +93,7 @@ header input::-moz-placeholder {
 @media (orientation: landscape) and (max-width: 1200px) {
   header {
     font-size: 11px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -107,11 +103,10 @@ header input::-moz-placeholder {
   }
   header nav {
     display: inline-flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 314px;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     margin-right: calc(100vw - 314px - 86px - 248px - 102px);
   }
   header .logo {
@@ -132,8 +127,7 @@ header input::-moz-placeholder {
 @media (orientation: portrait) {
   header {
     font-size: 11px;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     margin-left: auto;
     margin-right: auto;
     right: 0;
@@ -145,10 +139,9 @@ header input::-moz-placeholder {
   }
   header nav {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
   }
   header .search {
     display: flex;
@@ -334,7 +327,7 @@ header input::-moz-placeholder {
 #page-popular-track {
   font-size: 12.8px;
   line-height: 19.2px;
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
 }
 #page-popular-track h2,
 #page-popular-track h3 {
@@ -426,7 +419,7 @@ header input::-moz-placeholder {
   }
 }
 #page-discography {
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
 }
 #page-discography h2,
 #page-discography h3 {
@@ -525,7 +518,7 @@ header input::-moz-placeholder {
   }
 }
 #page-similar {
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
   margin-bottom: 100px;
 }
 #page-similar h2 {
@@ -542,9 +535,8 @@ header input::-moz-placeholder {
 }
 #page-similar .similar {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 #page-similar .similar-info p {
   margin: 0;
@@ -650,7 +642,7 @@ footer .bg-green {
   height: 2px;
 }
 footer .first-block {
-  padding: 62px 20px 71px 20px;
+  padding: 62px 20px 71px;
 }
 footer .first-block .first-flex ul {
   padding: 0;
@@ -673,7 +665,7 @@ footer .first-block p {
   margin: 0;
 }
 footer .last-block {
-  padding: 40px 20px 47px 20px;
+  padding: 40px 20px 47px;
 }
 footer .last-block .last-flex .footer-link {
   height: 25px;
@@ -697,9 +689,8 @@ footer .last-block .last-flex .footer-link {
   }
   footer .last-block .last-flex div {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     width: 432px;
   }
 }
@@ -719,9 +710,8 @@ footer .last-block .last-flex .footer-link {
   }
   footer .last-block .last-flex div {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     width: 360px;
     height: 185px;
   }

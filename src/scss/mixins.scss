@@ -1,4 +1,4 @@
-@mixin h ($orientation) {
+@mixin h($orientation) {
   @if ($orientation == landscape) {
     h1 {
       color: $white;
@@ -26,7 +26,9 @@
       margin: 0;
     }
 
-  } @else {
+  }
+  
+  @else {
     h1 {
       color: $white;
       font-size: 30px;
@@ -55,7 +57,7 @@
   }
 }
 
-@mixin button-color ($fs, $bg, $br) {
+@mixin button-color($fs, $bg, $br) {
   font-size: $fs;
   border: none;
   outline: none;
@@ -65,7 +67,7 @@
   text-align: center;
 }
 
-@mixin bg ($puth) {
+@mixin bg($puth) {
   background-image: $puth;
   background-position: center;
   background-size: cover;

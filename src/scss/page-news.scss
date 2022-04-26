@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
   text-align: center;
 
   h2 {
@@ -21,8 +21,7 @@
 
 .news-item {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   text-align: left;
 
@@ -53,16 +52,15 @@
 }
 
 .btn-new:hover {
-    color: $white;
-    border-color: $white;
+  color: $white;
+  border-color: $white;
 }
 
 .news-author {
   font-size: 12px;
   text-transform: uppercase;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   width: 185px;
   height: 20px;

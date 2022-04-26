@@ -1,5 +1,5 @@
 #page-discography {
-  padding: 100px 20px 0 20px;
+  padding: 100px 20px 0;
 
   h2,
   h3 {
@@ -35,8 +35,8 @@
   }
 
   .discography-item {
-      margin-right: 50px;
-      margin-bottom: 25px;
+    margin-right: 50px;
+    margin-bottom: 25px;
   }
 }
 
@@ -44,7 +44,7 @@
   #page-discography {
     width: 1200px;
     margin: 0 auto;
-        
+
     h2 {
       color: $white;
       font-size: 38px;
@@ -89,8 +89,9 @@
 
     h3 {
       font-size: 18px;
-      line-height: 27px;  
+      line-height: 27px;
     }
+    
   }
 
   .discography {
