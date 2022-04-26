@@ -132,7 +132,6 @@ header input::-moz-placeholder {
     margin-right: auto;
     right: 0;
     left: 0;
-    margin: 0 20px;
     top: 25px;
     height: 145px;
     justify-content: space-between;
@@ -387,14 +386,14 @@ header input::-moz-placeholder {
     margin-left: auto;
     margin-right: auto;
   }
-  #page-popular-track .track-flex .popular-track:first-child {
-    margin-right: 50px;
-  }
   #page-popular-track .track-flex .popular-track {
     width: 550px;
   }
   #page-popular-track .track-flex .track-info {
     width: 480px;
+  }
+  #page-popular-track .track-flex .popular-track:first-child {
+    margin-right: 50px;
   }
 }
 @media (orientation: portrait) {
@@ -408,14 +407,14 @@ header input::-moz-placeholder {
     width: 375px;
     height: 135px;
   }
-  #page-popular-track .track-flex .popular-track:first-child {
-    margin-bottom: 25px;
-  }
   #page-popular-track .track-flex .popular-track {
     min-width: 375px;
   }
   #page-popular-track .track-flex .track-info {
     min-width: 305px;
+  }
+  #page-popular-track .track-flex .popular-track:first-child {
+    margin-bottom: 25px;
   }
 }
 #page-discography {
@@ -433,9 +432,12 @@ header input::-moz-placeholder {
 }
 #page-discography .discography {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+#page-discography .discography .discography-item {
+  margin-right: 50px;
+  margin-bottom: 25px;
 }
 #page-discography .discography .discography-item:nth-child(5) {
   margin-bottom: 0;
@@ -445,10 +447,6 @@ header input::-moz-placeholder {
 }
 #page-discography .discography-info p {
   margin: 0;
-}
-#page-discography .discography-item {
-  margin-right: 50px;
-  margin-bottom: 25px;
 }
 
 @media (orientation: landscape) {
@@ -485,16 +483,6 @@ header input::-moz-placeholder {
   }
 }
 @media (orientation: portrait) {
-  #page-discography h2 {
-    color: #fff;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  #page-discography h3 {
-    font-size: 18px;
-    line-height: 27px;
-  }
-
   .discography {
     min-width: 375px;
   }
@@ -515,6 +503,16 @@ header input::-moz-placeholder {
   }
   .discography-item .discography-info .h3-height-margin {
     margin-top: 54px;
+  }
+
+  #page-discography h2 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #page-discography h3 {
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 #page-similar {

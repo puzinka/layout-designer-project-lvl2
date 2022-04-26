@@ -15,9 +15,13 @@
 
   .discography {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+
+    .discography-item {
+      margin-right: 50px;
+      margin-bottom: 25px;
+    }
 
     .discography-item:nth-child(5) {
       margin-bottom: 0;
@@ -32,11 +36,6 @@
     p {
       margin: 0;
     }
-  }
-
-  .discography-item {
-    margin-right: 50px;
-    margin-bottom: 25px;
   }
 }
 
@@ -80,20 +79,6 @@
 }
 
 @media (orientation: portrait) {
-  #page-discography {
-    h2 {
-      color: $white;
-      font-size: 18px;
-      line-height: 27px;
-    }
-
-    h3 {
-      font-size: 18px;
-      line-height: 27px;
-    }
-    
-  }
-
   .discography {
     min-width: 375px;
   }
@@ -119,6 +104,19 @@
       .h3-height-margin {
         margin-top: 54px;
       }
+    }
+  }
+
+  #page-discography {
+    h2 {
+      color: $white;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 27px;
     }
   }
 }

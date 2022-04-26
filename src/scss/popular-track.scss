@@ -32,7 +32,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-    
+
       .name-track {
         p {
           margin: 0;
@@ -73,10 +73,6 @@
       margin-left: auto;
       margin-right: auto;
 
-      .popular-track:first-child {
-        margin-right: 50px;
-      }
-    
       .popular-track {
         width: 550px;
       }
@@ -84,6 +80,10 @@
       .track-info {
         width: 480px;
       }
+    }
+
+    .track-flex .popular-track:first-child {
+      margin-right: 50px;
     }
   }
 }
@@ -101,10 +101,6 @@
       width: 375px;
       height: 135px;
 
-      .popular-track:first-child {
-        margin-bottom: 25px;
-      }
-
       .popular-track {
         min-width: 375px;
       }
@@ -113,5 +109,10 @@
         min-width: 305px;
       }
     }
-  }    
+
+    .track-flex .popular-track:first-child {
+      margin-bottom: 25px;
+    }
+
+  }
 }

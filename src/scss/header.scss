@@ -122,12 +122,11 @@ header {
     $input-height: 25px;
 
     font-size: $font-size;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
     margin-left: auto;
     margin-right: auto;
     right: 0;
     left: 0;
-    margin: 0 20px;
     top: $top;
     height: 145px;
     justify-content: space-between;
