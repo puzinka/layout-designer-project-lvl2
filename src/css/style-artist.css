@@ -577,6 +577,7 @@ header input::-moz-placeholder {
     width: 250px;
   }
   .similar-item .similar-info h3 {
+    width: 250px;
     height: 27px;
   }
   .similar-item .similar-info p {
