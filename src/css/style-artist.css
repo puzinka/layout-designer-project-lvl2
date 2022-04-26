@@ -209,7 +209,7 @@ header input::-moz-placeholder {
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/heart.svg);
+  background-image: url("../images/heart.svg");
   width: 20px;
   height: 20px;
   filter: invert(1);
@@ -221,7 +221,7 @@ header input::-moz-placeholder {
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/play-button.svg);
+  background-image: url("../images/play-button.svg");
   width: 20px;
   height: 20px;
   filter: invert(1);
