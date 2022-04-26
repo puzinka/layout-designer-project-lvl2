@@ -216,7 +216,7 @@ header input::-moz-placeholder {
   text-align: center;
 }
 .form-container .btn {
-  border-radius: 5px;
+  border-radius: 3px;
   outline: none;
 }
 
