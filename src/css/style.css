@@ -216,9 +216,7 @@ header input::-moz-placeholder {
   text-align: center;
 }
 .form-container .btn {
-  border: solid 1px;
   border-radius: 5px;
-  background: none;
   outline: none;
 }
 
@@ -227,7 +225,8 @@ header input::-moz-placeholder {
   min-height: 47px;
   padding-left: 20px;
   margin-bottom: 1.5rem;
-  border-color: #fff;
+  border: solid 1px #fff;
+  background: none;
 }
 
 @media (orientation: landscape) {

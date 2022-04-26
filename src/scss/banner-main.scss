@@ -43,7 +43,8 @@
     }
 
     .btn {
-        @include btn;
+        border-radius: 5px;
+        outline: none;
     }
 }
 
@@ -52,7 +53,8 @@
     min-height: 47px;
     padding-left: 20px;
     margin-bottom: 1.5rem;
-    border-color: $white;
+    border: solid 1px $white;
+    background: none;
 }
 
 @media (orientation: landscape) {
