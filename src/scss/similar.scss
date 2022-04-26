@@ -1,5 +1,6 @@
 #page-similar {
-    padding: 100px 20px;
+    padding: 100px 20px 0 20px;
+    margin-bottom: 100px;
 
     h2 {
         margin-bottom: 48px;
@@ -20,22 +21,6 @@
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
-
-        .similar:nth-child(5) {
-            margin-bottom: 0;
-        }
-
-        .similar:nth-child(6) {
-            margin-bottom: 0;
-        }
-
-        .similar:nth-child(7) {
-            margin-bottom: 0;
-        }
-
-        .similar:nth-child(8) {
-            margin-bottom: 0;
-        }
     }
 
     .similar-info {
@@ -65,8 +50,13 @@
 
     .similar {
         max-width: 1200px;
+        height: 663px;
         margin-left: auto;
         margin-right: auto;
+
+        .margin-bottom-landscape {
+            margin-bottom: 0;
+        }
     }
 
     .similar-item {
@@ -97,6 +87,11 @@
 
     .similar {
         min-width: 375px;
+        height: 995px;
+
+        .margin-bottom-portrait {
+            margin-bottom: 0;
+        }
     }
 
     .similar-item {
