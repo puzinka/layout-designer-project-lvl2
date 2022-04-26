@@ -576,14 +576,6 @@ header input::-moz-placeholder {
   .similar-item .similar-info {
     width: 250px;
   }
-  .similar-item .similar-info h3 {
-    width: 250px;
-    height: 27px;
-  }
-  .similar-item .similar-info p {
-    width: 250px;
-    height: 48px;
-  }
 }
 @media (orientation: portrait) {
   #page-similar h2 {
@@ -607,9 +599,15 @@ header input::-moz-placeholder {
   }
   .similar-item .similar-info {
     width: 137px;
+    height: 75px;
+  }
+  .similar-item .similar-info h3 {
+    width: 137px;
+    height: 27px;
   }
   .similar-item .similar-info p {
     width: 137px;
+    height: 48px;
   }
 }
 footer {
