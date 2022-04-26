@@ -2,9 +2,6 @@
     font-size: 12.8px;
     line-height: 19.2px;
     padding: 100px 20px 0 20px;
-    width: 1240px;
-    margin: 0 auto;
-
     h2,
     h3 {
         font-weight: bold;
@@ -57,6 +54,9 @@
 
 @media (orientation: landscape) {
     #page-popular-track {
+        width: 1240px;
+        margin: 0 auto;
+
         h2 {
             color: $white;
             font-size: 38px;
