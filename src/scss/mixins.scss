@@ -25,9 +25,7 @@
       font-weight: normal;
       margin: 0;
     }
-  } 
-
-  @else {
+  } @else {
     h1 {
       color: $white;
       font-size: 30px;
