@@ -233,6 +233,7 @@ header input::-moz-placeholder {
 @media (orientation: landscape) {
   .banner-main {
     height: 750px;
+    width: 100%;
   }
 
   h1 {
