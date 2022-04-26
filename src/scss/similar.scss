@@ -1,18 +1,18 @@
 #page-similar {
     padding: 100px 20px;
 
-    h2,
-    h3 {
-        font-weight: bold;
-    }
-
     h2 {
         margin-bottom: 48px;
         text-transform: uppercase;
+        font-weight: bold;
     }
 
     h3 {
         text-align: center;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 700;
+        text-transform: capitalize;
     }
 
     .similar {
@@ -61,11 +61,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
-        h3 {
-            font-size: 18px;
-            line-height: 27px;  
-        }
     }
 
     .similar {
@@ -97,11 +92,6 @@
             color: $white;
             font-size: 18px;
             line-height: 27px;
-        }
-
-        h3 {
-            font-size: 18px;
-            line-height: 27px;  
         }
     }
 
