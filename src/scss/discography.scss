@@ -42,6 +42,9 @@
 
 @media (orientation: landscape) {
     #page-discography {
+        width: 1200px;
+        margin: 0 auto;
+        
         h2 {
             color: $white;
             font-size: 38px;

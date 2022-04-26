@@ -377,7 +377,7 @@ header input::-moz-placeholder {
 
 @media (orientation: landscape) {
   #page-popular-track {
-    width: 1240px;
+    width: 1200px;
     margin: 0 auto;
   }
   #page-popular-track h2 {
@@ -459,6 +459,10 @@ header input::-moz-placeholder {
 }
 
 @media (orientation: landscape) {
+  #page-discography {
+    width: 1200px;
+    margin: 0 auto;
+  }
   #page-discography h2 {
     color: #fff;
     font-size: 38px;
@@ -553,6 +557,11 @@ header input::-moz-placeholder {
 }
 
 @media (orientation: landscape) {
+  #page-similar {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #page-similar h2 {
     color: #fff;
     font-size: 38px;
