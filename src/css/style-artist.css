@@ -426,7 +426,8 @@ header input::-moz-placeholder {
 }
 #page-discography h2,
 #page-discography h3 {
-  font-weight: bold;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 #page-discography h2 {
   margin-bottom: 48px;
@@ -488,7 +489,7 @@ header input::-moz-placeholder {
     line-height: 27px;
   }
   #page-discography h3 {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 27px;
   }
 
