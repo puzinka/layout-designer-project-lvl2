@@ -532,6 +532,7 @@ header input::-moz-placeholder {
 #page-similar .similar-info p {
   margin: 0;
   text-align: center;
+  letter-spacing: 0.5px;
 }
 #page-similar .similar-item {
   margin-right: 50px;
