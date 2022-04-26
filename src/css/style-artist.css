@@ -335,8 +335,6 @@ header input::-moz-placeholder {
   font-size: 12.8px;
   line-height: 19.2px;
   padding: 100px 20px 0 20px;
-  width: 1240px;
-  margin: 0 auto;
 }
 #page-popular-track h2,
 #page-popular-track h3 {
@@ -378,6 +376,10 @@ header input::-moz-placeholder {
 }
 
 @media (orientation: landscape) {
+  #page-popular-track {
+    width: 1240px;
+    margin: 0 auto;
+  }
   #page-popular-track h2 {
     color: #fff;
     font-size: 38px;
