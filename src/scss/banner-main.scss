@@ -12,17 +12,10 @@
     z-index: -1;
 }
 
-main {
-    margin: 0 auto;
-    text-align: center;
-}
-
-/*
 .main-section {
     margin: 0 auto;
     text-align: center;
 }
-*/
 
 .form-container {
     display: flex;
@@ -73,19 +66,12 @@ main {
 
     @include h (landscape);
 
-    main {
-        p {
-            margin: 32px 0 16px 0;
-        }
-    }
-
-    /*
     .main-section {
         p {
             margin: 32px 0 16px 0;
         }
     }
-    */
+
     
 }
 
@@ -100,12 +86,6 @@ main {
     .main-section {
         margin-top: 47px;
     }
-    
-    /*
-    .main-section {
-        margin-top: 47px;
-    }
-    */
 
     .form-container input {
         flex: 1;

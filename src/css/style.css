@@ -183,17 +183,11 @@ header input::-moz-placeholder {
   z-index: -1;
 }
 
-main {
+.main-section {
   margin: 0 auto;
   text-align: center;
 }
 
-/*
-.main-section {
-    margin: 0 auto;
-    text-align: center;
-}
-*/
 .form-container {
   display: flex;
   flex-direction: row;
@@ -267,17 +261,9 @@ main {
     margin: 0;
   }
 
-  main p {
+  .main-section p {
     margin: 32px 0 16px 0;
   }
-
-  /*
-  .main-section {
-      p {
-          margin: 32px 0 16px 0;
-      }
-  }
-  */
 }
 @media (orientation: portrait) {
   .banner-main {
@@ -314,11 +300,6 @@ main {
     margin-top: 47px;
   }
 
-  /*
-  .main-section {
-      margin-top: 47px;
-  }
-  */
   .form-container input {
     flex: 1;
   }
