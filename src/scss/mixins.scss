@@ -1,79 +1,79 @@
 @mixin h ($orientation) {
-    @if ($orientation == landscape) {
-        h1 {
-            color: $white;
-            font-size: 60px;
-            line-height: 90px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        h2 {
-            color: $white;
-            font-size: 38px;
-            line-height: 57px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        h3 {
-            color: $white;
-            font-size: 24px;
-            line-height: 36px;
-            font-weight: normal;
-            margin: 0;
-        }
-
-    } @else {
-        h1 {
-            color: $white;
-            font-size: 30px;
-            line-height: 45px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        h2 {
-            color: $white;
-            font-size: 18px;
-            line-height: 27px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        h3 {
-            color: $white;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: normal;
-            margin: 0;
-        }
+  @if ($orientation == landscape) {
+    h1 {
+      color: $white;
+      font-size: 60px;
+      line-height: 90px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
     }
+
+    h2 {
+      color: $white;
+      font-size: 38px;
+      line-height: 57px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    h3 {
+      color: $white;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+  } @else {
+    h1 {
+      color: $white;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    h3 {
+      color: $white;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
 }
 
 @mixin button-color ($fs, $bg, $br) {
-    font-size: $fs;
-    border: none;
-    outline: none;
-    background: $bg;
-    border-radius: $br;
-    color: $white;
-    text-align: center;
+  font-size: $fs;
+  border: none;
+  outline: none;
+  background: $bg;
+  border-radius: $br;
+  color: $white;
+  text-align: center;
 }
 
 @mixin bg ($puth) {
-    background-image: $puth;
-    background-position: center;
-    background-size: cover;
+  background-image: $puth;
+  background-position: center;
+  background-size: cover;
 }
 
 @mixin btn {
-    border: solid 1px;
-    border-radius: 5px;
-    background: none;
-    outline: none;
+  border: solid 1px;
+  border-radius: 5px;
+  background: none;
+  outline: none;
 }

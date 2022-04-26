@@ -1,94 +1,90 @@
 #page-description {
-    padding: 200px 20px;
+  padding: 200px 20px;
 }
 
 .banner-main {
-    @include bg (url(../images/banner.png));
-    background-repeat: no-repeat;
-    width: 1440px;
-    position: absolute;
-    top: 0;
-    left: calc(50vw - 720px);
-    z-index: -1;
+  @include bg (url(../images/banner.png));
+  background-repeat: no-repeat;
+  width: 1440px;
+  position: absolute;
+  top: 0;
+  left: calc(50vw - 720px);
+  z-index: -1;
 }
 
 .main-section {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 570px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 570px;
+  margin: 0 auto;
 
-    input::-webkit-input-placeholder {
-        color: $dark-gray;
-    }
+  input::-webkit-input-placeholder {
+    color: $dark-gray;
+  }
 
-    input::-moz-placeholder {
-        color: $dark-gray;
-    }
+  input::-moz-placeholder {
+    color: $dark-gray;
+  }
 
-    .btn-banner {
-        min-width: 374px;
-        text-transform: uppercase;
-        flex: 1;
-        height: 57px;
+  .btn-banner {
+    min-width: 374px;
+    text-transform: uppercase;
+    flex: 1;
+    height: 57px;
 
-        @include button-color (13px, $green, 5px);
-    }
+    @include button-color (13px, $green, 5px);
+  }
 
-    .btn {
-        outline: none;
-    }
+  .btn {
+    outline: none;
+  }
 }
 
 .inpt {
-    min-width: calc(270px - 20px);
-    min-height: 45px;
-    padding-left: 20px;
-    margin-bottom: 1.5rem;
-    border: solid 2px $white;
-    background: none;
-    color: $white;
-    border-radius: 3px;
+  min-width: calc(270px - 20px);
+  min-height: 45px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: solid 2px $white;
+  background: none;
+  color: $white;
+  border-radius: 3px;
 }
 
 @media (orientation: landscape) {
+  .banner-main {
+    height: 750px;
+    width: 100%
+  }
 
-    .banner-main {
-        height: 750px;
-        width: 100%
+  @include h (landscape);
+
+  .main-section {
+    p {
+      margin: 32px 0 16px 0;
     }
-
-    @include h (landscape);
-
-    .main-section {
-        p {
-            margin: 32px 0 16px 0;
-        }
-    }
-
-    
+  }  
 }
 
 @media (orientation: portrait) {
+  .banner-main {
+    height: 853px;
+  }
 
-    .banner-main {
-        height: 853px;
-    }
+  @include h (portrait);
 
-    @include h (portrait);
+  .main-section {
+    margin-top: 47px;
+  }
 
-    .main-section {
-        margin-top: 47px;
-    }
-
-    .form-container input {
-        flex: 1;
-    }
+  .form-container input {
+    flex: 1;
+  }
 }

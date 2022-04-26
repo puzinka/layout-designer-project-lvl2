@@ -1,117 +1,118 @@
 #page-popular-track {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  padding: 100px 20px 0 20px;
+
+  h2,
+  h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h3 {
     font-size: 12.8px;
-    line-height: 19.2px;
-    padding: 100px 20px 0 20px;
-    h2,
-    h3 {
-        font-weight: bold;
-        text-transform: uppercase;
+    line-height: 19.2px;  
+  }
+
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  .track-flex {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+
+    img {
+      width: 55px;
+      height: 55px;
     }
 
-    h3 {
-        font-size: 12.8px;
-        line-height: 19.2px;  
-    }
-
-    h2 {
-        margin-bottom: 48px;
-    }
-
-    .track-flex {
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 25px;
-
-        img {
-            width: 55px;
-            height: 55px;
+    .track-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+        
+      .name-track {
+        p {
+          margin: 0;
         }
-
-        .track-info {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            
-            .name-track {
-                p {
-                    margin: 0;
-                }
-            }
-        }
-
-        .popular-track {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
+      }
     }
 
-    .track-flex:last-child {
-        margin-bottom: 0;
+    .popular-track {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
+  }
+
+  .track-flex:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (orientation: landscape) {
-    #page-popular-track {
-        width: 1200px;
-        margin: 0 auto;
+  #page-popular-track {
+    width: 1200px;
+    margin: 0 auto;
 
-        h2 {
-            color: $white;
-            font-size: 38px;
-            line-height: 57px;
-            width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .track-flex {
-            flex-direction: row;
-            width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-
-            .popular-track:first-child {
-                margin-right: 50px;
-            }
-            
-            .popular-track {
-                width: 550px;
-            }
-
-            .track-info {
-                width: 480px;
-            }
-        }
+    h2 {
+      color: $white;
+      font-size: 38px;
+      line-height: 57px;
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    .track-flex {
+      flex-direction: row;
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .popular-track:first-child {
+        margin-right: 50px;
+      }
+        
+      .popular-track {
+        width: 550px;
+      }
+
+      .track-info {
+        width: 480px;
+      }
+    }
+  }
 }
 
 @media (orientation: portrait) {
-    #page-popular-track {
-        h2 {
-            color: $white;
-            font-size: 18px;
-            line-height: 27px;
-        }
-
-        .track-flex {
-            flex-direction: column;
-            width: 375px;
-            height: 135px;
-
-            .popular-track:first-child {
-                margin-bottom: 25px;
-            }
-
-            .popular-track {
-                min-width: 375px;
-            }
-
-            .track-info {
-                min-width: 305px;
-            }
-        }
+  #page-popular-track {
+    h2 {
+      color: $white;
+      font-size: 18px;
+      line-height: 27px;
     }
+
+    .track-flex {
+      flex-direction: column;
+      width: 375px;
+      height: 135px;
+
+      .popular-track:first-child {
+        margin-bottom: 25px;
+      }
+
+      .popular-track {
+        min-width: 375px;
+      }
+
+      .track-info {
+        min-width: 305px;
+      }
+    }
+  }
     
 }

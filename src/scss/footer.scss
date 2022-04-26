@@ -1,135 +1,135 @@
 footer {
-    width: 100%;
+  width: 100%;
 
-    h2 {
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: bold;
-        margin-bottom: 16px;
-    }
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
 
-    .footer-link {
-        font-size: 16px;
-        line-height: 24px;
-        color: $gray;
-        text-decoration: none;
-        height: 20px;
-    }
+  .footer-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+    text-decoration: none;
+    height: 20px;
+  }
 
-    .footer-link:hover {
-        color: $white;
-    }
+  .footer-link:hover {
+    color: $white;
+  }
 
-    .bg-gradient {
-        background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-    }
+  .bg-gradient {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  }
 
-    .bg-green {
-        background: $gray;
-        height: 2px;
-    }
+  .bg-green {
+    background: $gray;
+    height: 2px;
+  }
 
-    .first-block {
-        padding: 62px 20px 71px 20px;
+  .first-block {
+      padding: 62px 20px 71px 20px;
 
-        .first-flex {
-            ul {
-                padding: 0;
-                margin: 0;
-            }
-
-            li {
-                list-style-type: none;
-            }
-
-            .flex-img {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 150px;
-                align-items: center;
-
-                img {
-                    vertical-align: middle;
-                }
-            }
+      .first-flex {
+        ul {
+          padding: 0;
+          margin: 0;
         }
 
-        p {
-            margin: 0;
+        li {
+          list-style-type: none;
         }
-    }
 
-    .last-block {
-        padding: 40px 20px 47px 20px;
+        .flex-img {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 150px;
+          align-items: center;
 
-        .last-flex {
-            .footer-link {
-                height: 25px;
-            }
+          img {
+            vertical-align: middle;
+          }
         }
+      }
+
+      p {
+        margin: 0;
+      }
+  }
+
+  .last-block {
+    padding: 40px 20px 47px 20px;
+
+    .last-flex {
+      .footer-link {
+        height: 25px;
+      }
     }
+  }
 }
 
 @media (orientation: landscape) {
-    footer {
-        h2 {
-            width: 270px;
-        }
-
-        .first-flex {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .last-block {
-            .last-flex {
-                max-width: 1200px;
-                margin: 0 auto;
-
-                div {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    flex-wrap: nowrap;
-                    width: 432px;
-                }
-            }
-        }
+  footer {
+    h2 {
+      width: 270px;
     }
+
+    .first-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .last-block {
+      .last-flex {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          width: 432px;
+        }
+      }
+    }
+  }
 }
 
 @media (orientation: portrait) {
-    footer {
-        h2 {
-            width: 375px;
-        }
-
-        .first-flex {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 375px;
-            height: 549px;
-        }
-        
-        .last-block {
-            .last-flex {
-                width: 360px;
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    flex-wrap: nowrap;
-                    width: 360px;
-                    height: 185px;
-                }
-            }
-        }
+  footer {
+    h2 {
+      width: 375px;
     }
+
+    .first-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 375px;
+      height: 549px;
+    }
+    
+    .last-block {
+      .last-flex {
+        width: 360px;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          width: 360px;
+          height: 185px;
+        }
+      }
+    }
+  }
 }

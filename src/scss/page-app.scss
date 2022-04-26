@@ -1,63 +1,61 @@
 #page-app {
-    max-width: 1200px;
-    margin: 0 auto 100px auto;
-    padding: 100px 20px 0 20px;
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 100px 20px 0 20px;
 
-    h2 {
-        text-align: center;
-        margin-bottom: 48px;
-    }
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
 
-    .mobile-app-p {
-        margin-bottom: 16px;
-    }
+  .mobile-app-p {
+    margin-bottom: 16px;
+  }
 
-    .btn {
-        @include button-color (12.8px, $red, 32px);
-        padding: 16px 40px;
-        text-decoration: none;
-    }
+  .btn {
+    @include button-color (12.8px, $red, 32px);
+    padding: 16px 40px;
+    text-decoration: none;
+  }
 
-    .margin-mobil-app {
-        margin-bottom: 30px;
-    }
+  .margin-mobil-app {
+    margin-bottom: 30px;
+  }
 }
 
 @media (orientation: landscape) {
-    #page-app {
-        .mobile-app-img {
-            margin-right: 125px;
-        }
-
-        .mobile-app-p {
-            width: 580px;
-            height: 48px;
-        }
-
-
+  #page-app {
+    .mobile-app-img {
+      margin-right: 125px;
     }
+
+    .mobile-app-p {
+      width: 580px;
+      height: 48px;
+    }
+  }
 }
 
 @media (orientation: portrait) {
-    #page-app {
-        .mobile-app-img {
-            margin: 0 auto;
-        }
-
-        .mobile-app-p {
-            width: 375px;
-        }
-
-        .height-1 {
-            height: 96px;
-        }
-
-        .height-2 {
-            height: 72px;
-        }
-
-        .column-mobile-app {
-            margin: 0 auto;
-        }
+  #page-app {
+    .mobile-app-img {
+      margin: 0 auto;
     }
+
+    .mobile-app-p {
+      width: 375px;
+    }
+
+    .height-1 {
+      height: 96px;
+    }
+
+    .height-2 {
+      height: 72px;
+    }
+
+    .column-mobile-app {
+      margin: 0 auto;
+    }
+  }
 }
