@@ -1,128 +1,128 @@
 #page-description {
   padding: 200px 20px;
 
-    .banner-main {
-        @include bg (url(../images/Morten-Harket.png));
-        background-repeat: no-repeat;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        z-index: -1;
+  .banner-main {
+    @include bg (url("../images/Morten-Harket.png"));
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+  }
+
+  .main-section {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      p {
+        margin-bottom: 49px;
+      }
+  }
+
+  .btn {
+    font-size: 12.8px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 30px;
+  }
+
+  .btn-red::before {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/heart.svg");
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    left: 30px;
+    top: 20px;
+  }
+
+  .btn-purple::before {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/play-button.svg");
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    left: 30px;
+    top: 20px;
+  }
+
+  .btn-red {
+    background: $red;
+    position: relative;
+    width: 200px;
+    height: 62px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 30px;
     }
+  }
 
-    .main-section {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+  .btn-purple {
+    background: $purple;
+    position: relative;
+    width: 200px;
+    height: 62px;
 
-        div {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        p {
-            margin-bottom: 49px;
-        }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 20px;
     }
-
-    .btn {
-        font-size: 12.8px;
-        font-weight: 400;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        color: $white;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 20px 30px;
-    }
-
-    .btn-red::before {
-        position: absolute;
-        content: '';
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("../images/heart.svg");
-        width: 20px;
-        height: 20px;
-        filter: invert(1);
-        left: 30px;
-        top: 20px;
-    }
-
-    .btn-purple::before {
-        position: absolute;
-        content: '';
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("../images/play-button.svg");
-        width: 20px;
-        height: 20px;
-        filter: invert(1);
-        left: 30px;
-        top: 20px;
-    }
-
-    .btn-red {
-        background: $red;
-        position: relative;
-        width: 200px;
-        height: 62px;
-
-        p {
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 30px;
-        }
-    }
-
-    .btn-purple {
-        background: $purple;
-        position: relative;
-        width: 200px;
-        height: 62px;
-
-        p {
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-right: 20px;
-        }
-    }
+  }
 }
 
 @media (orientation: landscape) {
-    @include h (landscape);
+  @include h (landscape);
 
-    .banner-main {
-        height: 713px;
+  .banner-main {
+    height: 713px;
+  }
+
+  .main-section {
+    margin-top: 50px;
+    margin-bottom: 22px;
+
+    div {
+      flex-direction: row;
+      width: 425px;
     }
-
-    .main-section {
-        margin-top: 50px;
-        margin-bottom: 22px;
-
-        div {
-            flex-direction: row;
-            width: 425px;
-        }
-    }
+  }
 }
 
 @media (orientation: portrait) {
-    @include h (portrait);
+  @include h (portrait);
 
-    .banner-main {
-        height: 730px;
+  .banner-main {
+    height: 730px;
+  }
+
+  .main-section {
+    margin-top: 25px;
+
+    div {
+      flex-direction: column;
+      width: 201px;
+      height: 147px;
     }
-
-    .main-section {
-        margin-top: 25px;
-
-        div {
-            flex-direction: column;
-            width: 201px;
-            height: 147px;
-        }
-    }
+  }
 }

@@ -171,7 +171,7 @@ header input::-moz-placeholder {
   padding: 200px 20px;
 }
 #page-description .banner-main {
-  background-image: url(../images/Morten-Harket.png);
+  background-image: url("../images/Morten-Harket.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
